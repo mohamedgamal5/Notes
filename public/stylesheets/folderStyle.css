@@ -1,0 +1,56 @@
+.row{
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.foldersShow{
+  width: 75%;
+}
+.folderList {
+  overflow: hidden;
+  
+}
+.folder {
+  background: transparent;
+  margin: 20px;
+}
+
+.card.folder {
+  margin: 20px;
+  border: none;
+}
+.col-sm-3 a {
+  text-decoration: none;
+}
+
+.col-sm-3.folder .icon-close {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background: #c7aa89;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.fixed-bottom.plus {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.fixed-bottom.plus button {
+  color: #fff;
+  background: #c7aa89;
+  border: #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+}

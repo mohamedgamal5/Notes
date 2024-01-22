@@ -1,0 +1,15 @@
+<header class="fixed-top">
+  <h2 class="logo">Note</h2>
+  <nav class="navigation">
+    <a href="/folders">Home</a>
+    <a href="/">About</a>
+    <a href="http://">Service</a>
+    <a href="/">Contact</a>
+    {{#if isAuth}}
+      <a href="/users/logout" class="btnLogin-popup">logout</a>
+    {{else}}
+      <a href="/users/signin" class="btnLogin-popup">Login</a>
+    {{/if}}
+
+  </nav>
+</header>

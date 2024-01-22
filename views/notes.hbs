@@ -1,0 +1,51 @@
+<div class="noteList" style="padding-top: 100px;">
+  {{#each notes}}
+    <div class="row">
+      {{#each this}}
+        <div class="col-sm-3 note">
+          <a href="/notes/delete/{{this._id}}">
+            <span class="icon-close"><i class="fa-solid fa-xmark"></i>
+            </span>
+          </a>
+          <a href="/notes/note/{{this._id}}" class="card note">
+            <div class="text-center">
+              <h5 class="card-title">{{this.title}}</h5>
+            </div>
+            <div class="card-header">
+              <h6 class="card-subtitle">{{this.description}}</h6>
+            </div>
+
+            <div class="card-body">
+              <textarea
+                name=""
+                id=""
+                cols="55"
+                rows="20"
+              >{{this.body}}</textarea>
+              {{!-- <p class="card-text overflow-auto">{{this.body}}</p> --}}
+            </div>
+            <div class="card-footer text-body-secondary">
+              {{this.createAt}}
+            </div>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
+
+<div class="fixed-bottom plus">
+  <a
+    href="/notes/create/{{folderId}}"
+    style="display: inline-block;
+  padding: 35px 20px;
+  background-color: #c7aa89;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;"
+  >
+    <i class="fa-solid fa-plus fa-2xl">
+    </i>
+  </a>
+</div>

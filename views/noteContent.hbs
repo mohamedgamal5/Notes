@@ -1,0 +1,45 @@
+<form class="formContent" action="/notes/update/{{note._id}}" method="post">
+  <div class="noteContent" style="padding-top: 100px;">
+
+    <div class="card">
+      <h1>Note</h1>
+      <div class="form-group">
+        <label for="floatingInputValue">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputValue"
+          placeholder="Title"
+          name="title"
+          value="{{note.title}}"
+        />
+        <div class="card-body">
+          <label for="floatingInputValue">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInputValue"
+            placeholder="Description"
+            name="description"
+            value="{{note.description}}"
+          />
+
+          <label for="floatingInputValue">Body</label>
+          <textarea
+            name="body"
+            cols="30"
+            rows="10"
+            type="text"
+            class="bodyArea"
+          >{{note.body}}</textarea>
+
+          <button type="submit" class="btn" style="font-size: 20px;">
+            save changes
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</form>

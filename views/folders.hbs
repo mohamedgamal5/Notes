@@ -1,0 +1,91 @@
+<div class="foldersShow">
+  <div class="folderList container" style=" padding-top: 100px;">
+    {{#each folders}}
+      <div class="row">
+        {{#each this}}
+          <div class="col-sm-3 folder">
+
+            <a href="/folders/delete/{{this._id}}">
+              <span class="icon-close"><i class="fa-solid fa-xmark"></i>
+              </span>
+            </a>
+            <a href="/folders/folder/{{this._id}}" class="card folder">
+              <div class="text-center">
+
+                <img src="/images/folder.png" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{this.name}} </h5>
+
+                <div>
+                  <span class="price float-start"> {{this.createAt}}</span>
+
+                </div>
+              </div>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<div class="fixed-bottom plus">
+  <button
+    type="button"
+    data-toggle="modal"
+    data-target="#exampleModalCenter"
+    style=" "
+  >
+    <i class="fa-solid fa-plus fa-2xl"></i>
+  </button>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModalCenter"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">create folder</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="folders/create" method="post" class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputValue"
+          placeholder="name"
+          name="folderName"
+          value="newFolder"
+        />
+        <label for="floatingInputValue">Folder name</label>
+        <br />
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">
+            create
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >Close</button>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

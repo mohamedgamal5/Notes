@@ -1,0 +1,137 @@
+.row{
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.noteList {
+    overflow: hidden;
+    align-items: center;
+  }
+  .note {
+    background: transparent;
+    margin: 20px;
+  }
+  
+  .card.note {
+    margin: 20px;
+    border: none;
+  }
+  .col-sm-3.note {
+    background: url('/images/paper.jpg') ;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    max-width: 30%;
+    min-width: 500px;
+    right: 0;;
+} 
+  .col-sm-3 a {
+    text-decoration: none;
+} 
+
+.col-sm-3.note .icon-close {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+  }
+.fixed-bottom.plus {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.fixed-bottom.plus a {
+  color: #fff;
+  background: #c7aa89;
+  border: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.card-body textarea{
+    background: transparent;
+    border: transparent;
+    padding-right: 20px;
+    width: 100%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dbc388; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c29c54; 
+  }
+
+.formContent{
+  width:75%
+}
+  .noteContent{
+    background: url('/images/paper.jpg') ;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .noteContent .card{
+    background: transparent;
+  }
+
+  .noteContent .card{
+    padding: 20px;
+  }
+  .card label{
+    border-color: #c7aa89;
+    background: transparent;
+    font-size: 20px;
+  }
+
+  .card-body label{
+    border-color: #c7aa89;
+    background: transparent;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .card input{
+    border-color: #c7aa89;
+    background: transparent;
+    font-size: 25px;
+  }
+
+  .card input:focus{
+    border-color: #c7aa89;
+    background: transparent;
+    font-size: 25px;
+  }
+
+  .card textarea{
+    background: transparent;
+    border-color: #c29c54;
+    border: 5px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll; 
+    height: 500px;
+}
